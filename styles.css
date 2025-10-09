@@ -39,6 +39,10 @@ nav a {
   color: #ffffff;
 }
 
+nav a:hover {
+  background-color: var(--primary-color);
+}
+
 nav a[aria-current='page'] {
   color: none;
   background-color: var(--primary-color);
@@ -51,4 +55,22 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.cats {
+  font-size: 3rem;
+  height: 3rem;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.child {
+border: solid 1px #0F4C75;
+padding: 5rem;
 }
