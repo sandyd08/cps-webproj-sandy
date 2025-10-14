@@ -68,9 +68,10 @@ h1 {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 5rem;
 }
 
 .child {
-border: solid 1px #0F4C75;
+border: solid 0.5px var(--black-color);
 padding: 5rem;
 }
