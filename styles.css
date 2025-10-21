@@ -65,10 +65,11 @@ h1 {
 .parent {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 5rem;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .child {
