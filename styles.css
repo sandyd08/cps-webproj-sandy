@@ -59,16 +59,17 @@ h1 {
 
 .parent {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
-  padding: 5rem;
+  gap: 10px;
+  width: 100%;
 }
 
-.child {
-border: solid 0.5px var(--black-color);
-padding: 5rem;
+.child img{
+width: 100%;
+min-width: 200px;
+justify-content: center;
 }
 
 .aboutpar {
@@ -77,7 +78,8 @@ padding: 5rem;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 5rem;
+  padding: 2rem;
+  width: 40%;
 }
 
 .aboutchi {
