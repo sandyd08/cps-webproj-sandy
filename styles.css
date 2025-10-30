@@ -70,7 +70,7 @@ h1 {
 
 .child img{
 min-width: 400px;
-height: 400px;
+max-height: 400px;
 }
 
 .aboutpar {
