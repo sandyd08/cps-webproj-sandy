@@ -3,9 +3,9 @@
 }
 
 :root {
---primary-color: #3282B8;
---secondary-color: #0F4C75;
---black-color: rgb(22, 22, 22);
+  --primary-color: #3282b8;
+  --secondary-color: #0f4c75;
+  --black-color: rgb(22, 22, 22);
 }
 
 body {
@@ -43,7 +43,7 @@ nav a:hover {
   background-color: var(--primary-color);
 }
 
-nav a[aria-current='page'] {
+nav a[aria-current="page"] {
   color: none;
   background-color: var(--primary-color);
 }
@@ -59,17 +59,18 @@ h1 {
 
 .parent {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
-  gap: 10px;
+  flex-wrap: wrap;
   width: 100%;
 }
 
-.child img{
-width: 100%;
-min-width: 200px;
-justify-content: center;
+.child img {
+  border: solid 2px var(--black-color);
+  width: 50%;
+  min-width: 200px;
+  margin: 20px;
 }
 
 .aboutpar {
@@ -85,7 +86,7 @@ justify-content: center;
 .aboutchi {
   border: solid 0.5px var(--black-color);
   padding: 5rem;
-  }  
+}
 
 .aboutchi:hover {
   background-color: var(--primary-color);
