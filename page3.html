@@ -18,6 +18,40 @@
       <main>
       <h1>American Shorthairs</h1>
       <p>American Shorthairs are a stocky breed that comes in a variety of colors.</p>
+
+      <form id="thet">
+        <div>
+          Name:
+          <input type="text"></type>
+        </div>
+        <br>
+        <fieldset>
+          <legend>Cats or Dogs?</legend>
+          <input type="radio" id="O1" name="C1" value="Cats">
+          <label for="O1">Cats</label>
+          <input type="radio" id="O2" name="C1" value="Dogs">
+          <label for="O2">Dogs</label>
+        </fieldset>
+        <br>
+        <div>
+          <label for="R1">Rate Shorthairs on a scale of 1-5:</label>
+        <input type="range" id="R1" name="Rate" min="1" max="5" value="1">
+        </div>
+        <br>
+        <div>
+          Email:
+        <input type="email"></type>
+        </div>
+        <button id="mro">
+          Back
+        </button>
+       <input type="submit" onclick="formSubmit()">
+<script>
+    function formSubmit() {
+        alert("Form submitted!")
+        }
+</script>
+      </form>
       </body>
       </main>
 </html>
