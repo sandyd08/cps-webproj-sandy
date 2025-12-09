@@ -2,18 +2,20 @@
 <html lang="en">
   <head>
     <title>Other page</title>
+    <meta name=description content="The cats need information." />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
-    <body>
+
+  <body>
     <nav>
       <a href="/index.html">Main</a>
       <a href="/"aria-current="page">About</a>
-      <a href="/page3.html">Page3</a>
-      <a href="/page4.html">Page4</a>
-      <a href="/sitemap.html">Site Map</a>
+      <a href="/page3.html">Shorthairs</a>
+      <a href="/page4.html">Calicos</a>
+      <a href="/more.html">More</a>
     </nav>
     <main>
       <h1 style="text-align:center">About Page</h1>
@@ -23,5 +25,38 @@
       <div class="aboutchi">About</div>
       <div class="aboutchi">Contact</div>
     </div>
+          <form id="thet">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+        </div>
+        <br>
+        <fieldset>
+          <legend>Cats or Dogs?</legend>
+          <input type="radio" id="O1" name="C1" value="Cats">
+          <label for="O1">Cats</label>
+          <input type="radio" id="O2" name="C1" value="Dogs">
+          <label for="O2">Dogs</label>
+        </fieldset>
+        <br>
+          <label for="R1">Rate the website on a scale of 1-5: </label>
+        <input type="range" id="R1" name="Rate" min="1" max="5" value="1">
+        <br>
+        <div>
+        <label for="email">Email:</label>
+        <input type="email"></type>
+        <br>
+        <button id="mro">
+          Back
+        </button>
+       <input type="submit" onclick="formSubmit()">
+<script>
+    function formSubmit() {
+        const nameInput = document.getElementById("name").value
+        console.log(nameInput);
+
+        alert("Submitted successfully, " + nameInput)
+        }
+</script>
   </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Cats</title>
-    <meta name=description content="The cats are on mars." />
+    <meta name="description" content="The cats are on mars." />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <!--
@@ -17,16 +17,36 @@
     <nav>
       <a href="/" aria-current="page">Main</a>
       <a href="/page2.html">About</a>
-      <a href="/page3.html">Page3</a>
-      <a href="/page4.html">Page4</a>
-      <a href="/sitemap.html">Site Map</a>
+      <a href="/page3.html">Shorthairs</a>
+      <a href="/page4.html">Calicos</a>
+      <a href="/more.html">More</a>
     </nav>
     <div>image placeholder</div>
-  <div class="parent">
-    <div class="child"><img src="Images/Calico.jpg"></div>
-    <div class="child"><img src="Images/AmShorthair.jpg"></div>
-  </div>
-  <div class="footer">
-    <p>Contact @aac.lchs</p>
-  </div>
+    <div class="parent">
+      <div class="child"><img src="Images/Calico.jpg" /></div>
+      <div class="child"><img src="Images/AmShorthair.jpg" /></div>
+    </div>
+    <div>
+      <label>
+        Dark Mode
+        <input type="checkbox" onchange="toggleDarkMode()" />
+      </label>
+      <script>
+        function toggleDarkMode() {
+          let darkMode = false;
+          console.log("Dark mode is initially " + darkMode);
+          if (darkMode == true) {
+            darkMode = false;
+            document.body.style["backgroundColor"] = "#FFFFFF";
+            document.body.style["color"] = "#000000";
+          } else {
+            darkMode = true;
+            document.body.style["backgroundColor"] = "#000000";
+            document.body.style["color"] = "#FFFFFF";
+          }
+          console.log("Dark mode is now " + darkMode);
+        }
+      </script>
+    </div>
+  </body>
 </html>
