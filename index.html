@@ -21,19 +21,21 @@
       <a href="/page4.html">Calicos</a>
       <a href="/more.html">More</a>
     </nav>
-    <div>image placeholder</div>
+    <main>
+    <h1>The Cat Index</h1>
     <div class="parent">
       <div class="child"><img src="Images/Calico.jpg" /></div>
       <div class="child"><img src="Images/AmShorthair.jpg" /></div>
     </div>
+    <p>The cat breed index. A collection of information on various cat breeds.</p>
     <div>
       <label>
         Dark Mode
         <input type="checkbox" onchange="toggleDarkMode()" />
       </label>
       <script>
+      let darkMode = false;
         function toggleDarkMode() {
-          let darkMode = false;
           console.log("Dark mode is initially " + darkMode);
           if (darkMode == true) {
             darkMode = false;
@@ -48,5 +50,6 @@
         }
       </script>
     </div>
+  </main>
   </body>
 </html>

@@ -71,6 +71,20 @@ h1 {
   justify-content: center;
 }
 
+.infoImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 50%;
+}
+
+.infoImgChild {
+  width: 10%;
+  justify-content: center;
+}
+
 .aboutpar {
   display: flex;
   justify-content: center;
