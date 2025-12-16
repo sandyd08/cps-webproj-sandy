@@ -73,16 +73,13 @@ h1 {
 
 .infoImg {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   flex-direction: row;
-  gap: 10px;
-  width: 50%;
 }
 
 .infoImgChild {
-  width: 10%;
-  justify-content: center;
+  max-width: 500px;
 }
 
 .aboutpar {
