@@ -53,10 +53,19 @@
        <input type="submit" onclick="formSubmit()">
 <script>
     function formSubmit() {
-        const nameInput = document.getElementById("name").value
-        console.log(nameInput);
+      const rateWeb = document.getElementById("R1").value
+        console.log(rateWeb);
 
-        alert("Submitted successfully, " + nameInput)
+        const catPref = document.getElementById("pref").value
+        console.log(catPref);
+
+        const dogPref = document.getElementById("O2").value
+        console.log(dogPref);
+
+        const catDog = document.getElementById("O1").value
+        console.log(catDog);
+
+        alert("Submitted successfully, " + nameInput + ". You've rated the website a " + rateWeb + "/5. " + "And you've shown a preference for " + catPref + " Plus you like " + catDog + " over " + dogPref)
         }
 </script>
   </body>
