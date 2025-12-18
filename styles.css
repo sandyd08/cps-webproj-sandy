@@ -99,7 +99,3 @@ h1 {
 .aboutchi:hover {
   background-color: var(--primary-color);
 }
-
-.thet {
-  flex-wrap: wrap;
-}
